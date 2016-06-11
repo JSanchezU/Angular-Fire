@@ -1,0 +1,23 @@
+{
+  "name": "Angular-Fire",
+  "description": "Practica de Angular Fire",
+  "main": "index.html",
+  "authors": [
+    "Javier Sanchez"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Javierimperial/Angular-Fire",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.6",
+    "angular-resource": "^1.5.6",
+    "angular-route": "^1.5.6",
+    "angularfire": "^2.0.1"
+  }
+}
