@@ -1,6 +1,26 @@
-angular.module('videoGames.controllers', [])
+angular.module('videogames.controllers', [])
 
-.controller('GameListController', function(games){
+.controller('listController', function($location, $games){
+  var list = this;
+
+  $games.list().then(function(games){
+    list.games = games;
+  }, function(error){
+    console.log(error);
+    alert(error.message);
+  });
+
+  list.add = function(){
+    $games.add(list.game).then(function(){
+      alert('Success!');
+    }, function(error){
+      alert('Error');
+      console.log(error);
+    });
+  };
+});
+
+/*.controller('GameListController', function(games){
   var gameList = this;
   gameList.games = games;
 
@@ -34,6 +54,4 @@ angular.module('videoGames.controllers', [])
     editGame.games.$save(editGame.game).then(function(data){
       $location.path('/');
     });
-  };
-
-});
+  };*/

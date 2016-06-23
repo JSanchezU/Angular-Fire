@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html ng-app="videoGames">
+<html ng-app="videogames">
 <head>
-	<title>NG-Route</title>
+	<title>Games</title>
 	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
 	<script type="text/javascript" src="bower_components/angular-resource/angular-resource.js"></script>
 	<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
@@ -9,17 +9,15 @@
 	<script type="text/javascript" src="bower_components/angularfire/dist/angularfire.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 	<script type="text/javascript" src="controllers.js"></script>
-	<script type="text/javascript" src="services.js"></script>
+	<script type="text/javascript" src="factories.js"></script>
 </head>
 <body>
 	<h1>My video Games</h1>
 	<div ng-view></div>
 	<nav>
-		<a href="#/">Home</a>
+		<a href="#/home">Home</a>
 		<br>
-		<a href="#/songs">Songs</a>
-		<br>
-		<a href="#/contactus">Contact Us</a>
+		<a href="#/games">Games</a>
 	</nav>
 </body>
 </html>
